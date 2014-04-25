@@ -10,10 +10,10 @@ EXEC = sorting
 all: $(EXEC)
 
 clean:
-	rm $(OBJS) $(EXEC) *~
+	rm -f $(OBJS) $(EXEC) *~
 	
 tidy:
-	rm $(OBJS) *~
+	rm -f $(OBJS) *~
 	
 $(EXEC): $(OBJS) Makefile
 	$(CC) $(CFLAGS) $(OBJS) -o $(EXEC) $(LIBS)
